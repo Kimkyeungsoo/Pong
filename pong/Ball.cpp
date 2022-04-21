@@ -41,11 +41,16 @@ void Ball::ReboundBatOrTop()
 void Ball::ReboundBottom()
 {
 	//dir.y *= -1.f;
-	position.y = originalPosition.y;
+	position = originalPosition;
 }
+
+//void Ball::SetPosition(const float& x)
+//{
+//	position.x = x;
+//}
 
 void Ball::Update(float dt)
 {
-	position += dir * dt * speed;
+	position -= dir * dt * speed;
 	shape.setPosition(position);
 }

@@ -24,10 +24,14 @@ private:
 	float speed = 1000.f;
 	Sides moveDir = Sides::NONE;
 public:
+	Bat();
 	Bat(float x, float y);
 
-	FloatRect GetGlobalBounds();	// 面悼 眉农
+	FloatRect GetGlobalBounds();	// 面倒 眉农
 	const RectangleShape& GetShape();
+
+	//float GetPositionX() const;
+	//void ReboundSides();
 
 	void SetMoveDir(Sides side);
 
