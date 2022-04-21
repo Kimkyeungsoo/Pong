@@ -1,5 +1,9 @@
 #include "Bat.h"
 
+Bat::Bat()
+{
+}
+
 Bat::Bat(float x, float y)
 	: position(x, y)
 {
@@ -16,6 +20,11 @@ const RectangleShape& Bat::GetShape()
 {
 	return shape; // 렌더링 할 때 사용
 }
+
+//float Bat::GetPositionX() const
+//{
+//	return position.x;
+//}
 
 void Bat::SetMoveDir(Sides side)
 {

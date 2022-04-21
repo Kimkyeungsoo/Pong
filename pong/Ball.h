@@ -24,6 +24,8 @@ public:
 	void ReboundBatOrTop();
 	void ReboundBottom();
 
+	//void SetPosition(const float& x);
+
 	void Update(float dt);
 };
 
